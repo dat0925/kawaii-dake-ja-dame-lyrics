@@ -1,0 +1,172 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[japanese, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{japanese}
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Noto Sans CJK JP をメインに使用
+\babelfont{rm}{Noto Sans}
+\babelfont[japanese]{rm}{Noto Sans CJK JP}
+
+\usepackage{enumitem}
+\setlist[itemize]{label=-}
+% --- END UNIVERSAL PREAMBLE BLOCK ---
+
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{pxrubrica} % ルビ用パッケージ
+
+% かわいいデザインのための設定
+\newtcolorbox{myframe}{
+  colback=white,
+  colframe=black,
+  arc=5mm,
+  boxrule=1.2pt,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  fonttitle=\bfseries,
+  height=\textheight % ページいっぱいの高さに設定
+}
+
+% ルビをグループルビとして処理する設定
+\newcommand{\myruby}[2]{\ruby[g]{#1}{#2}}
+
+\begin{document}
+
+% --- 1ページ目：歌詞 ---
+\begin{myframe}
+    \centering
+    \vspace*{2mm}
+    {\Large $\star$ \myruby{可}{か}\myruby{愛}{わ}いだけじゃだめですか？ $\star$} \\
+    \vspace{3mm}
+    {\large CUTIE STREET} \\
+    \vspace{4mm}
+    \hrule
+    \vspace{6mm}
+
+    \begin{multicols}{2}
+    \raggedright % 左揃え
+    \small 
+    \setlength{\baselineskip}{1.7em} % 行間を広げて下の余白を埋める
+    
+    \noindent
+    \myruby{大}{だい}ピンチです！ \\
+    あと１０\myruby{分}{ぷん}で\myruby{家}{いえ}を\myruby{出}{で}なくちゃ \\
+    \myruby{遅刻}{ちこく}しちゃいそうです！ \\
+    \myruby{逃}{に}げるにしかず \myruby{本気}{ほんき}\myruby{出}{だ}したら \\
+    \myruby{時間}{じかん}なくてもめっちゃ \\
+    \myruby{可}{か}\myruby{愛}{わ}くなれるもん！ \\
+    \vspace{3mm}
+    にゃにゃにゃ $\dots$ \\
+    \vspace{3mm}
+    とはいえちょっと\myruby{間}{ま}に合わなそう！ \\
+    だけどすっぴんは\myruby{見}{み}せられなーい/// \\
+    「ダメー$\times\times$」 \\
+    \myruby{今日}{きょう}だけ\myruby{散財}{さんざい} Go して！タクシー！ \\
+    メイクの\myruby{道具}{どうぐ}も\myruby{応援中}{おうえんちゅう}！ \\
+    \myruby{私}{わたし}のでっかい\myruby{夢}{夢}に\myruby{比}{くら}べたら \\
+    こんな\myruby{失敗}{しっぱい}はちっちゃいかー！（？） \\
+    この\myruby{可}{か}\myruby{愛}{わ}さに\myruby{免}{めん}じて ゆるして！ \\
+    おねがい！「おねがい！」 \\
+    \myruby{取柄}{とりえ}ないけど \myruby{顔}{かお}が\myruby{可}{か}\myruby{愛}{わ}いのも \\
+    \myruby{才能}{さいのう}だと\myruby{思}{おも}って\myruby{優}{やさ}しくしてほしいのです \\
+    あの\myruby{手}{て}この\myruby{手}{て}で \myruby{今}{いま}をときめけ！ \\
+    \myruby{長所}{ちょうしょ}を\myruby{磨}{みが}け \myruby{磨}{みが}け \myruby{磨}{みが}け！ \\
+    \myruby{可}{か}\myruby{愛}{わ}いさで\myruby{世界征服}{せかいせいふく}！ \\
+    「かわいいだけじゃダメですか？」 \\
+    \myruby{右}{みぎ}・\myruby{左}{ひだり}・\myruby{正面}{しょうめん} キュン４させちゃう！ \\
+    かわいいものはみんなぎゅぎゅっとして \\
+    \myruby{時}{とき}は\myruby{戦国}{せんごく} \\
+    \myruby{小野小町}{おののこまち}も \myruby{多分}{たぶん}\myruby{本気}{ほんき}\myruby{出}{だ}してた \\
+    \myruby{愛}{あい}を\myruby{取}{と}り\myruby{合}{あ}う\myruby{戦}{たたか}いなのです！ \\
+    \myruby{臆病}{おくびょう}な\myruby{心}{こころ}は ポポポイっとして \\
+    シェアでハピハピ \myruby{楽}{たの}しくなれる \\
+    ここが ここが ここが\myruby{世界一}{せかいいち}の\myruby{場所}{ばしょ}！ \\
+    \vspace{3mm}
+    にゃにゃにゃ $\dots$ \\
+    \vspace{3mm}
+    \myruby{本当}{ほんとう}はかわいいだけじゃないのです！ \\
+    と\myruby{思}{おも}ったけれど ダメダメだ～「やんっ」 \\
+    このかわいさに\myruby{免}{めん}じて \myruby{守}{まも}って \\
+    おねがい！「おねがい！」 \\
+    やるせないけど \myruby{私}{わたし}の\myruby{可}{か}\myruby{愛}{わ}いさを \\
+    \myruby{見}{み}つけてくれる\myruby{人}{ひと}がいることを\myruby{願}{ねが}って \\
+    しっぽふりふり フルスイングで「カキーン！」 \\
+    \myruby{短所}{たんしょ}も\myruby{使}{つか}え \myruby{使}{つか}え \myruby{使}{つか}え！ \\
+    ドジなとこも おバカなとこも \\
+    「かわいいだけじゃだめですか？」 \\
+    \myruby{縦}{たて}・\myruby{横}{よこ}・\myruby{斜}{なな}め キュン４させちゃう！ \\
+    \myruby{好}{す}きのキモチはギュギュギュギュギュッとして \\
+    \myruby{時}{とき}は\myruby{紀元前}{きげんぜん} \\
+    クレオパトラも ガチで\myruby{本気}{ほんき}\myruby{出}{だ}してた \\
+    \myruby{愛}{あい}を\myruby{手}{て}にする \myruby{戦}{たたか}いなのです！ \\
+    \myruby{君}{きみ}の\myruby{愛}{あい}があれば ムムム \myruby{ムゲンダイ}{むげんだい} \\
+    マル バツ シカク Sun\myruby{角度}{かくど}は Good \\
+    \myruby{写メ}{しゃめ}は \myruby{写メ}{しゃめ}は \myruby{写メ}{しゃめ}は \\
+    \myruby{自撮}{じど}りが\myruby{盛}{も}れるの～！ \\
+    \myruby{宇宙}{うちゅう}とかに\myruby{比}{くら}べたらさ \\
+    ちっぽけだ\myruby{私}{わたし}たち \\
+    \myruby{成層圏}{せいそうけん}コスモス\myruby{飛}{と}び\myruby{越}{こ}えて \\
+    どこまーでも\myruby{行}{い}っちゃってー！ \\
+    Kawaii は\myruby{無限}{むげん}で\myruby{絶対}{ぜったい}です！ \\
+    Cutie はなんか\myruby{色々救}{いろいろすく}っちゃいます！ \\
+    ここは\myruby{原宿}{はらじゅく} \\
+    かわいいものが\myruby{集}{あつ}まる…っていうことは \\
+    「\myruby{日本}{にっぽん}の\myruby{中心}{ちゅうしん}！」 \\
+    かわいいおかしたくさん\myruby{食}{た}べたいな \\
+    「でもだめよ！」 \\
+    かわいいメーターがさがっちゃ～うッッ！ \\
+    「かわいいだけじゃだめですか？」 \\
+    ファンもアンチも キュン４させちゃう \\
+    かわいさのヒミツはおしえてあげない！ \\
+    \myruby{時}{とき}はちょっと\myruby{前}{まえ} \\
+    マリリン・モンローも \myruby{多分}{たぶん}\myruby{本気}{ほんき}\myruby{出}{だ}してた \\
+    \myruby{全銀河中}{ぜんぎんがちゅう} キュン４させちゃう \\
+    \myruby{地球}{ちきゅう}の\myruby{形変}{かたちか}わっちゃうくらい \\
+    ラブでラブして！ \myruby{愛}{あい}で\myruby{愛}{あい}して！ \\
+    もっと もっと キュンな\myruby{世界}{せかい}を\myruby{作}{つく}ろう！ \\
+    \vspace{3mm}
+    にゃにゃにゃ $\dots$
+    \end{multicols}
+\end{myframe}
+
+\newpage
+
+% --- 2ページ目：ことばのいみ ---
+\begin{myframe}
+    \centering
+    \vspace*{1cm}
+    {\huge $\heartsuit$ ことばのいみ $\heartsuit$} \\
+    \vspace{1cm}
+    \hrule
+    \vspace{1cm}
+
+    \begin{flushleft}
+    \Large 
+    \setlength{\baselineskip}{2.5em}
+    \begin{itemize}[label=$\star$, leftmargin=1.5cm]
+        \item \textbf{\myruby{逃}{に}げるにしかず}：あれこれなやむより、にげちゃうのがいちばんいいほうほうだ、ということ。
+        \item \textbf{\myruby{散財}{さんざい}}：お金をたくさんつかっちゃうこと。
+        \item \textbf{\myruby{免}{めん}じて}：そのことにめんどうをみて、ゆるしてあげること。
+        \item \textbf{\myruby{取柄}{とりえ}}：その人のいいところ、じまんできるところ。
+        \item \textbf{\myruby{世界征服}{せかいせいふく}}：世界ぜんぶをじぶんのものにすること。
+        \item \textbf{\myruby{紀元前}{きげんぜん}}：ずっとずっとむかし、カレンダーがはじまるまえのこと。
+        \item \textbf{\myruby{成層圏}{せいそうけん}}：空のずっとずっと高いところ。
+        \item \textbf{\myruby{アンチ}}：その人のことがきらいな人。
+        \item \textbf{\myruby{全銀河中}{ぜんぎんがちゅう}}：宇宙（うちゅう）ぜんぶの星のなかで。
+    \end{itemize}
+    \end{flushleft}
+    
+    \vfill
+    \centering
+    {\large $\star \star \star$ たくさんうたってね！ $\star \star \star$}
+    \vspace*{1cm}
+\end{myframe}
+
+\end{document}
